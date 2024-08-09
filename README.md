@@ -31,7 +31,9 @@ I used Postman API platform to see the output of my code. So here are the result
 ![github1](https://github.com/user-attachments/assets/ac1f6fc7-4480-435f-bba3-af9baf4494be)
 
 
-In project i used SQLite3 for my database if you want to check it out : 
+I used SQLite3 database in the project. If you want to check it out : 
 
 ![github](https://github.com/user-attachments/assets/397831ca-636f-41e0-9ab7-ce57e37647f0)
 
+
+Thanks for your time. 
