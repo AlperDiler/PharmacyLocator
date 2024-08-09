@@ -1,3 +1,4 @@
+# Pharmacy Locator
 Hi everyone! This project provides a function to find pharmacies closest to user's location and return them as an HTTP response. 
 
 We have 3 files in the project. These files are controllers, models and routers .
