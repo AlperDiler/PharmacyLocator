@@ -24,5 +24,8 @@ d) Computes the distance between the user’s location and each pharmacy using t
 e) Sort and Limit Results: Sorts the pharmacies by distance and limits the result to the top 5 closest pharmacies.
 f) Sets the response header to application/json and encodes the result into JSON format, which is sent back to the client.
 
+# Output 
 
+I used Postman API platform to see the output of my code. So here are the result : 
+![github1](https://github.com/user-attachments/assets/ac1f6fc7-4480-435f-bba3-af9baf4494be)
       
