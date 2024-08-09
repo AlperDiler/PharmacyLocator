@@ -7,11 +7,11 @@ In Models file i define the Pharmacy and UserCoords structs. While the Pharmacy 
 Routers file sets up routing for a web application using the Gorilla Mux router and configures it to handle specific HTTP requests.
 
 And the Controllers file defines a function for finding the nearest pharmacies to a user's location. The function uses a combination of the geo-golang and geodist packages to calculate distances between the user and various pharmacies. It performs the following tasks:
-    1)Parse Coordinates:
+1)Parse Coordinates:
 
-    The parseCoordinates function extracts latitude and longitude from the 'Koordinat' field of each pharmacy. It splits the coordinate string by a comma, trims whitespace, and converts the strings to float       values. The parsed latitude and longitude are then stored in the Latidute and Longidute fields of the Pharmacy struct.
+The parseCoordinates function extracts latitude and longitude from the 'Koordinat' field of each pharmacy. It splits the coordinate string by a comma, trims whitespace, and converts the strings to float values. The parsed latitude and longitude are then stored in the Latidute and Longidute fields of the Pharmacy struct.
 
-    2) Find Nearest Pharmacies:
+2) Find Nearest Pharmacies:
 
     The FindNearestPharmacies function is an HTTP handler that:
       a)Verifies if the database connection (db) is initialized.
