@@ -8,19 +8,21 @@ In Models file i define the Pharmacy and UserCoords structs. While the Pharmacy 
 Routers file sets up routing for a web application using the Gorilla Mux router and configures it to handle specific HTTP requests.
 
 And the Controllers file defines a function for finding the nearest pharmacies to a user's location. The function uses a combination of the geo-golang and geodist packages to calculate distances between the user and various pharmacies. It performs the following tasks:
-1)Parse Coordinates:
+
+# Parse Coordinates:
 
 The parseCoordinates function extracts latitude and longitude from the 'Koordinat' field of each pharmacy. It splits the coordinate string by a comma, trims whitespace, and converts the strings to float values. The parsed latitude and longitude are then stored in the Latidute and Longidute fields of the Pharmacy struct.
 
-2) Find Nearest Pharmacies:
+# Find Nearest Pharmacies:
 
-    The FindNearestPharmacies function is an HTTP handler that:
-      a)Verifies if the database connection (db) is initialized.
-      b) Reads the user's location data from the request body and parses it into latitude and longitude.
-      c) Queries the database to fetch all pharmacies.
-      d) Computes the distance between the user’s location and each pharmacy using the Haversine formula. It creates a slice of distancePharmacy structs that hold pharmacy details and their      respective           distances from the user. 
-      e) Sort and Limit Results: Sorts the pharmacies by distance and limits the result to the top 5 closest pharmacies.
-      f) Sets the response header to application/json and encodes the result into JSON format, which is sent back to the client.
+The FindNearestPharmacies function is an HTTP handler that:
+
+a)Verifies if the database connection (db) is initialized.
+b) Reads the user's location data from the request body and parses it into latitude and longitude.
+c) Queries the database to fetch all pharmacies.
+d) Computes the distance between the user’s location and each pharmacy using the Haversine formula. It creates a slice of distancePharmacy structs that hold pharmacy details and their respective distances from the user. 
+e) Sort and Limit Results: Sorts the pharmacies by distance and limits the result to the top 5 closest pharmacies.
+f) Sets the response header to application/json and encodes the result into JSON format, which is sent back to the client.
 
 
       
