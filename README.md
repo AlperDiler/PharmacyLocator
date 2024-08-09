@@ -3,7 +3,7 @@ Hi everyone! This project provides a function to find pharmacies closest to user
 
 We have 3 files in the project. These files are controllers, models and routers .
 
-In Models file i define the Pharmacy and UserCoords structs. While the Pharmacy struct provides my relationship with my database, our UserCoords structure holds the location data I receive from the user. 
+In Models file i define the Pharmacy and UserCoords structs. While the Pharmacy struct provides my relationship with my database, our UserCoords struct holds the location data I receive from the user. 
 
 Routers file sets up routing for a web application using the Gorilla Mux router and configures it to handle specific HTTP requests.
 
