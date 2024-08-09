@@ -17,12 +17,12 @@ The parseCoordinates function extracts latitude and longitude from the 'Koordina
 
 The FindNearestPharmacies function is an HTTP handler that:
 
-a)Verifies if the database connection (db) is initialized.
-b) Reads the user's location data from the request body and parses it into latitude and longitude.
-c) Queries the database to fetch all pharmacies.
-d) Computes the distance between the user’s location and each pharmacy using the Haversine formula. It creates a slice of distancePharmacy structs that hold pharmacy details and their respective distances from the user. 
-e) Sort and Limit Results: Sorts the pharmacies by distance and limits the result to the top 5 closest pharmacies.
-f) Sets the response header to application/json and encodes the result into JSON format, which is sent back to the client.
+a)Verifies if the database connection (db) is initialized.                                            
+b) Reads the user's location data from the request body and parses it into latitude and longitude.                                                    
+c) Queries the database to fetch all pharmacies.                                                        
+d) Computes the distance between the user’s location and each pharmacy using the Haversine formula. It creates a slice of distancePharmacy structs that hold pharmacy details and their respective distances from the user.                                                           
+e) Sort and Limit Results: Sorts the pharmacies by distance and limits the result to the top 5 closest pharmacies.                                                  
+f) Sets the response header to application/json and encodes the result into JSON format, which is sent back to the client.                                                          
 
 # Output 
 
